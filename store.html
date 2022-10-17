@@ -1,0 +1,149 @@
+<html> 
+<!-- primeiro site -->
+
+<head>
+    <title>Charlie Brown Jr. | Store</title>
+    <meta name="description" content="this is the description">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <h1 class="band-name band-name-large">Charlieeee Brown Jr.</h1>
+    </header>
+    <section class="content-section container">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="./imagem/album 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">R$ 10,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <div>
+                    <span class="shop-item-title">Album 2</span>
+                </div>
+                <img class="shop-item-image" src="./imagem/album 2.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">R$ 20,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <div>
+                    <span class="shop-item-title">Album 3</span>
+                </div>
+                <img class="shop-item-image" src="./imagem/album 3.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">R$ 30,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <div>
+                    <span class="shop-item-title">Album 4</span>
+                </div>
+                <img class="shop-item-image" src="./imagem/album 4.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">R$ 40,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section container">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div>
+                <span class="shop-item-title">T-Shirt</span>
+                <img class="shop-item-image" src="./imagem/shirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price" id="valorT">R$ 50,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div>
+                <span class="shop-item-title">Cofee Cup</span>
+                <img class="shop-item-image" src="./imagem/Cofee.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price" id="valorA">R$ 100,00</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section container">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-colum">ITEM</span>
+            <span class="cart-price cart-header cart-colum">PRICE</span>
+            <span class="cart-quantity cart-header cart-colum">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-colum">
+                    <img class="cart-item-image" src="./imagem/shirt.png" width="100" height="100">
+                    <span class="cart-item-title">T-Shirt</span>
+                </div>
+                <span class="cart-price cart-colum" id="valor1">R$ 0,00</span>
+                <div class="cart-quantity cart-colum">
+                    <input class="cart-quantity-input" id="btn1" type="number" min="0" value="0" onclick="calcular1()">
+                    <button class="btn btn-danger" role="button" onclick="remover1()">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-colum">
+                    <img class="cart-item-image" src="./imagem/Album 3.png" width="100" height="100">
+                    <span class="cart-item-title">Album 3</span>
+                </div>
+                <span class="cart-price cart-colum" id="valor2">R$ 0,00</span>
+                <div class="cart-quantity cart-colum">
+                    <input class="cart-quantity-input" id="btn2" type="number" min="0" value="0" onclick="calcular2()">
+                    <button class="btn btn-danger" role="button" onclick="remover2()">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title" id="total">Total = </strong>
+            <span class="cart-total-price" id="total">R$ 0,00</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" role="button" id="pur" onclick="purchace()">PURCHASE</button>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Charlie Brown Jr.</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="./imagem/you tube logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com/" target="_blank">
+                        <img src="./imagem/spotify logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./imagem/facebook logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/script.js">        
+    </script>
+</body>
+
+</html>
